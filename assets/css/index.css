@@ -1,0 +1,17 @@
+:root {
+    --clr-blue-100: #F3F5FC;
+    --clr-blue-400: #0A3871;
+    --clr-white: #fff;
+}
+
+* {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--clr-blue-100);
+}
+
+.btn {
+    width: 3em;
+}
