@@ -1,1 +1,4 @@
-import * as palavra from './addPalavra'
+/*
+elem.addEventListener("click", () => {
+    count = teste(count)
+})*/
