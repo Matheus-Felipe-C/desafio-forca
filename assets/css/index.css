@@ -14,6 +14,10 @@ body {
     background-color: var(--clr-blue-100);
 }
 
+header > img {
+  margin-left: -2em;
+}
+
 main > * {
   display: flex;
   flex-direction: column;
@@ -53,23 +57,14 @@ main > button:first-child {
   background-color: #105bb7;
 }
 
-textarea {
-  background-color: var(--clr-blue-100);
-  color: var(--clr-blue-400);
-  border: none;
-  margin-top: 5em;
-  font-size: 1.5rem;
-  max-width: 90%;
-  height: 5em;
-  resize: none;
-  outline: none;
-}
-
 textarea::placeholder {
   color: var(--clr-blue-400);
 }
 
 @media (min-width: 768px) {
+  header > img {
+    margin-left: 0;
+  }
   .btn {
     width: 30%;
   }

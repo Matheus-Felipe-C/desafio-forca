@@ -1,0 +1,80 @@
+main > * {
+    flex-direction: row;
+    max-width: 90%;
+}
+
+textarea {
+    background-color: var(--clr-blue-100);
+    color: var(--clr-blue-400);
+    border: none;
+    margin-top: 4em;
+    margin-bottom: 2.3em;
+    font-size: 1.5rem;
+    max-width: 90%;
+    height: 5em;
+    resize: none;
+    outline: none;
+  }
+
+i {
+    margin-right: 0.5em;
+}
+p {
+    font-size: 0.8em;
+    text-align: start;
+    align-self: flex-start;
+}
+
+.btn-container {
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn,.btn-blue {
+    height: 4em;
+}
+
+@media (min-width: 768px) {
+    
+    main > * {
+        display: block;
+    }
+
+    textarea {
+        margin-left: 0.5em;
+    }
+
+    .btn-container {
+        display: block;
+        text-align: center;
+    }
+
+    .btn {
+        width: 40%;
+    }
+
+    .btn-blue {
+        margin-right: 1em;
+    }
+}
+
+@media (min-width: 1440px) {
+    main > * {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin: 20vh auto;
+    }
+
+    p {
+        align-self: auto;
+        margin-left: 8vw;
+    }
+
+    .btn-container {
+        position: relative;
+    }
+}
