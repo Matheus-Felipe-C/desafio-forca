@@ -10,3 +10,7 @@ function irAdd() {
 function irHome() {
     location.href = '../../index.html'
 }
+
+function iniciarJogo() {
+    location.href = '../../jogo.html'
+}
