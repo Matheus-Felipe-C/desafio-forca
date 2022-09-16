@@ -1,0 +1,20 @@
+html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.jogo {
+    height: 18em;
+    width: 90%;
+}
+
+.btn-container {
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn-blue {
+    height: 3em;
+}
