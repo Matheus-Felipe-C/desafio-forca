@@ -4,7 +4,7 @@ html {
 }
 
 .jogo {
-    height: 18em;
+    height: 68vh;
     width: 90%;
 }
 
@@ -24,6 +24,10 @@ html {
 }
 
 @media (min-width: 768px) {
+    .jogo {
+        width: 70%;
+    }
+
     .btn-container {
         display: block;
         text-align: center;
@@ -35,6 +39,10 @@ html {
 }
 
 @media (min-width: 1024px) {
+    .jogo {
+        width: 50%;
+    }
+
     .btn-container {
         position: relative;
         margin-top: 3em;

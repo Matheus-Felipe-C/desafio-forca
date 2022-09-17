@@ -1,7 +1,12 @@
-/* Exemplo de como chamar uma função através de um módulo
-elem.addEventListener("click", () => {
-    count = teste(count)
-})*/
+const btn = document.getElementById('btn')
+btn.addEventListener("click", escolherPalavra)
+
+let palavras = ["jogo", "teste", 'banana']
+
+function escolherPalavra() {
+    let palavraSecreta = palavras[Math.floor(Math.random() * palavras.length)]
+    console.log(palavraSecreta)
+}
 
 function irAdd() {
     location.href = '../../addPalavra.html'
