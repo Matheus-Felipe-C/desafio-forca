@@ -18,3 +18,25 @@ html {
 .btn-blue {
     height: 3em;
 }
+
+.btn {
+    height: 3em;
+}
+
+@media (min-width: 768px) {
+    .btn-container {
+        display: block;
+        text-align: center;
+    }
+
+    .btn-blue {
+        margin-right: 1em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .btn-container {
+        position: relative;
+        margin-top: 3em;
+    }
+}
