@@ -3,8 +3,8 @@ html {
     overflow-y: hidden;
 }
 
-.jogo {
-    height: 68vh;
+#jogo {
+    height: 70vh;
     width: 90%;
 }
 
@@ -24,8 +24,9 @@ html {
 }
 
 @media (min-width: 768px) {
-    .jogo {
-        width: 70%;
+    #jogo {
+        max-width: 1200px;
+        max-height: 800px;
     }
 
     .btn-container {
@@ -39,7 +40,7 @@ html {
 }
 
 @media (min-width: 1024px) {
-    .jogo {
+    #jogo {
         width: 50%;
     }
 
