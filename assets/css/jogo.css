@@ -3,15 +3,23 @@ html {
     overflow-y: hidden;
 }
 
-#jogo {
-    height: 70vh;
-    width: 90%;
+#holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.tracos {
+    border-bottom: solid 5px #565656;
+    padding: 0 14px;
+    margin: 14px 10px;
 }
 
 .btn-container {
     flex-direction: column;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
