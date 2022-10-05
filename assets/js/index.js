@@ -1,8 +1,8 @@
-window.onload = () => desenharPalavra(palavraSecreta)
+window.onload = () => desenharTracos(palavraSecreta)
 const btn = document.getElementById('btn')
 let forca = document.getElementById('forca')
 btn.addEventListener("click", escolherPalavra)
-document.addEventListener('keypress', (event) => verificaPalavra(event.key))
+document.addEventListener("keydown", (e) => {verificaPalavra(e)})
 
 let palavras = ['papagaio']
 let palavraSecreta = escolherPalavra()
@@ -13,7 +13,7 @@ function escolherPalavra() {
     return palavraSecreta
 }
 
-function desenharPalavra(palavra) {
+function desenharTracos(palavra) {
     let divPalavra = document.getElementById('holder')
 
     for(let i = 0; i < palavra.length; i++) {
@@ -24,8 +24,8 @@ function desenharPalavra(palavra) {
 }
 
 function verificaPalavra(letra) {
-    if ((/[a-zA-Z]/).test(letra)) {
-        
+    if (/^[a-zA-Z]+$/.test(letra.key) && letra.key.length == 1) {
+        console.log(letra.key)
     }
     else console.log('erro')
 }

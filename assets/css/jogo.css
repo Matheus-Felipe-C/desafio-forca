@@ -1,21 +1,33 @@
 html {
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 #holder {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
     padding: 0 30px;
 }
+
 
 .tracos {
     border-bottom: solid 5px #565656;
     padding: 0 14px;
     margin: 14px 10px;
+}
+
+#teclado {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tecla {
+    width: 1em;
+    height: 1em;
+    border: solid 1px #565656;
+    margin: 1em;
 }
 
 .btn-container {
